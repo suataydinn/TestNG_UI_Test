@@ -12,7 +12,7 @@ import utilities.BrowserUtils;
 import java.time.Duration;
 import java.util.List;
 
-public class CareersPage {
+public class CareersPage extends HomePage {
 
     @FindBy(xpath = "//a[contains(@href, 'https://useinsider.com/careers/open-positions/?department=')]")
     public WebElement allDepartmentsButton;

@@ -12,7 +12,7 @@ import utilities.ConfigurationReader;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DashboardPage {
+public class DashboardPage extends HomePage {
 
     @FindBy(css = "i.icon-arrow-right.location-slider-next")
     public WebElement rightArrowButton;

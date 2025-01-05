@@ -28,6 +28,8 @@ public class DashboardTest extends BaseTest {
         dashboardPage.navigatePage("https://useinsider.com/careers/quality-assurance/");
         Assert.assertEquals(driver.getTitle(), "Insider quality assurance job opportunities", "verify page title");
         Assert.assertEquals(careersPage.allDepartmentsButton.getText(), "See all QA jobs", "verify the button text");
+
+        BrowserUtils.waitForClickablility(careersPage.allDepartmentsButton, 2);
         careersPage.allDepartmentsButton.click();
 
         BrowserUtils.scrollToSize(0,100);
