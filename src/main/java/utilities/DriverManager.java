@@ -1,4 +1,4 @@
-package base;
+package utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -6,7 +6,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import utilities.ConfigurationReader;
 
 public class DriverManager {
 
@@ -34,7 +33,7 @@ public class DriverManager {
                     break;
 
                 default:
-                    throw new IllegalArgumentException("Geçersiz tarayıcı seçimi: " + browser);
+                    throw new IllegalArgumentException("invalid Browser: " + browser);
             }
         }
         return driver;
